@@ -1,0 +1,255 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  color: #fff !important;
+  background-color: #05d561;
+  border: none;
+  cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+body {
+  margin: 0px;
+}
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+*/
+/*Mixins*/
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/bg-1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0px 100px;
+}
+
+header .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .row .col-xl-7 .header-info {
+  padding: 60px 0px;
+  color: #fff;
+}
+
+header .row .col-xl-7 .header-info span {
+  font-family: 'Open Sans', sans-serif;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+header .row .col-xl-7 .header-info h1 {
+  margin-bottom: 13px;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 1.2;
+  font-family: "Titillium Web", sans-serif;
+}
+
+header .row .col-xl-7 .header-info h1 span {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+  header .row .col-xl-7 .header-info h1 {
+    font-size: 24px;
+  }
+}
+
+header .row .col-xl-7 .header-info p {
+  color: #888;
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 22px;
+}
+
+header .row .col-xl-7 .header-info .lets-start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+header .row .col-xl-7 .header-info .lets-start button {
+  padding: 11px 44px;
+  font-size: 24px;
+  border-radius: 999px;
+}
+
+@media only screen and (max-width: 768px) {
+  header .row .col-xl-7 .header-info .lets-start button {
+    padding: 11px 34px;
+  }
+}
+
+header .row .col-xl-7 .header-info .lets-start button:hover {
+  background: #222;
+}
+
+header .row .col-xl-7 .header-info .lets-start small {
+  width: 115px;
+  color: #fff;
+  text-transform: capitalize !important;
+  margin-left: 20px;
+  opacity: 0.4;
+  font-size: 13.6px;
+}
+
+header .row .col-xl-5 .banner {
+  background: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-radius: 10px;
+  padding: 50px;
+  text-align: center;
+}
+
+header .row .col-xl-5 .banner .circle {
+  background-color: rgba(5, 213, 97, 0.15);
+  height: 70px;
+  width: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+header .row .col-xl-5 .banner .circle i {
+  color: #222;
+  font-size: 30px;
+}
+
+header .row .col-xl-5 .banner h3 {
+  font-size: 27px;
+  margin-bottom: 5px;
+  color: #222;
+}
+
+header .row .col-xl-5 .banner p {
+  color: #888;
+  margin-bottom: 30px;
+}
+
+header .row .col-xl-5 .banner form {
+  width: 100%;
+}
+
+header .row .col-xl-5 .banner form button {
+  border-radius: 5px;
+  padding: 0px 40px;
+  width: 100%;
+  height: 45px;
+  margin-top: 20px;
+}
+
+header .row .col-xl-5 .banner form .user {
+  position: relative;
+  width: 100%;
+  margin-top: 20px;
+}
+
+header .row .col-xl-5 .banner form .user i {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 15px;
+}
+
+header .row .col-xl-5 .banner form .user input {
+  border-radius: 5px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #222;
+  background-color: #eee;
+  padding: 0 40px;
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  font-size: 14px;
+  border: none;
+}
+
+section .row .col-xl-12 {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+section .row .col-xl-12 p {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #222;
+  font-size: 32.4px;
+  width: 750px;
+  text-align: center;
+  padding: 120px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  section .row .col-xl-12 p {
+    font-size: 24px;
+  }
+}
+
+section .row .col-xl-12 p span {
+  font-weight: 600;
+}
+/*# sourceMappingURL=main.css.map */

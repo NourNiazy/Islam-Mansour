@@ -1,0 +1,238 @@
+$main-color:#06aebf;
+$dark-blue:#1d4a6a;
+$gray-color:#8d8d8d;
+$background-color:#212529;
+$icon-color:#5f6370;
+$dark-gray:#333;
+$font-color:#fff;
+$p-color:#888;
+
+* {
+    box-sizing: border-box;
+}
+
+button {
+    color: #fff !important;
+    background-color: #05d561;
+    border: none;
+    cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+/*
+font-family: 'Open Sans', sans-serif;
+font-family: 'Titillium Web', sans-serif;
+*/
+
+
+/*Mixins*/
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../img/bg-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 0px 100px;
+
+    .row {
+        a {
+            img {}
+        }
+    }
+
+    .row {
+        @include flex-center;
+
+        .col-xl-7 {
+            .header-info {
+                padding: 60px 0px;
+                color: $font-color;
+
+                span {
+                    font-family: 'Open Sans', sans-serif;
+                    margin-bottom: 12px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+
+                h1 {
+                    margin-bottom: 13px;
+
+                    span {
+                        font-family: "Titillium Web", sans-serif;
+                        font-weight: 600;
+
+                    }
+
+                    font-weight: 300;
+                    font-size: 48px;
+                    line-height: 1.2;
+                    font-family: "Titillium Web",
+                    sans-serif;
+
+                    @media only screen and (max-width: 768px) {
+                        font-size: 24px;
+                    }
+                }
+
+                p {
+                    color: $p-color;
+                    font-weight: 300;
+                    font-size: 20px;
+                    margin-bottom: 22px;
+                }
+
+                .lets-start {
+                    @include flex-center;
+                    justify-content: flex-start;
+
+                    button {
+                        padding: 11px 44px;
+                        font-size: 24px;
+                        border-radius: 999px;
+
+                        @media only screen and (max-width: 768px) {
+                            padding: 11px 34px;
+                        }
+
+                        &:hover {
+                            background: #222;
+                        }
+                    }
+
+                    small {
+                        width: 115px;
+                        color: #fff;
+                        text-transform: capitalize !important;
+                        margin-left: 20px;
+                        opacity: 0.4;
+                        font-size: 13.6px;
+                    }
+                }
+            }
+        }
+
+        .col-xl-5 {
+            .banner {
+                background: #ffffff;
+                @include flex-center;
+                flex-direction: column;
+                border-radius: 10px;
+                padding: 50px;
+                text-align: center;
+
+                .circle {
+                    background-color: rgba(5, 213, 97, 0.15);
+                    height: 70px;
+                    width: 70px;
+                    @include flex-center;
+                    padding: 10px;
+                    border-radius: 50%;
+
+                    i {
+                        color: #222;
+                        font-size: 30px;
+                    }
+                }
+
+                h3 {
+                    font-size: 27px;
+                    margin-bottom: 5px;
+                    color: #222;
+                }
+
+                p {
+                    color: $p-color;
+                    margin-bottom: 30px;
+                }
+
+                form {
+                    width: 100%;
+
+                    button {
+                        border-radius: 5px;
+                        padding: 0px 40px;
+                        width: 100%;
+                        height: 45px;
+                        margin-top: 20px;
+                    }
+
+                    .user {
+                        position: relative;
+                        width: 100%;
+                        margin-top: 20px;
+
+                        i {
+                            position: absolute;
+                            top: 15px;
+                            left: 15px;
+                            font-size: 15px;
+                        }
+
+                        input {
+                            border-radius: 5px;
+                            transition: all 0.2s;
+                            color: #222;
+                            background-color: #eee;
+                            padding: 0 40px;
+                            width: 100%;
+                            height: 45px;
+                            line-height: 45px;
+                            font-size: 14px;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+section {
+    .row {
+        .col-xl-12 {
+            text-align: center;
+            @include flex-center;
+
+            p {
+                font-family: "Titillium Web", sans-serif;
+                font-weight: 300;
+                line-height: 1.4;
+                color: #222;
+                font-size: 32.4px;
+                width: 750px;
+                text-align: center;
+                padding: 120px 0px;
+
+                @media only screen and (max-width: 768px) {
+                    font-size: 24px;
+                }
+
+                span {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
